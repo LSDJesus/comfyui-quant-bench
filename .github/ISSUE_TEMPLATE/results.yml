@@ -1,0 +1,33 @@
+name: Bench results
+description: Send the results zip from ./run.sh
+title: "Results: "
+labels: ["results"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for running the bench! Drag `results/qbench-<card>.zip` into the box below.
+  - type: input
+    id: card
+    attributes:
+      label: Graphics card
+      placeholder: e.g. RTX 4070 Ti Super 16 GB
+    validations:
+      required: true
+  - type: textarea
+    id: zip
+    attributes:
+      label: Results zip
+      description: Drag and drop the zip file here.
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: Credit as
+      description: How your name should appear on the results page. Leave empty to stay anonymous.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything unusual?
+      description: Power limit, undervolt or overclock, laptop GPU, monitors plugged into this card, errors you saw.

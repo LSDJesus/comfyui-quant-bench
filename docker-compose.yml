@@ -1,0 +1,24 @@
+# One service; run.sh drives it with `docker compose run`. You can also call
+# the steps yourself, e.g. `docker compose run --rm bench python /opt/kit/plan.py`.
+services:
+  bench:
+    build: .
+    image: comfyui-quant-bench:1
+    user: "${QBENCH_UID:-1000}:${QBENCH_GID:-1000}"
+    ipc: host
+    environment:
+      CUDA_VISIBLE_DEVICES: "${QBENCH_GPU:-0}"
+      QBENCH_FAST_DISK: "${QBENCH_FAST_DISK:-0}"      # 1 under WSL2, whose disk reads as non-NVMe to ComfyUI
+      QBENCH_CONTRIBUTOR: /mnt/.contributor.json
+      HF_TOKEN: "${HF_TOKEN:-}"
+      HF_HOME: /mnt/.hf
+    volumes:
+      - "${QBENCH_DATA:-./data}:/mnt"                 # models (~50-230 GB) and results
+      - ./results:/results                            # the zip you send back
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

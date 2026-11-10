@@ -1,0 +1,861 @@
+{
+ "version": 1,
+ "mount": "/mnt",
+ "max_vram_gb": 24.0,
+ "total_bytes": 304059897484,
+ "fit_bf16_max_bytes": 16000000000.0,
+ "files": [
+  {
+   "path": "cold/models/diffusion_models/ZiB/zImageBase_base.safetensors",
+   "uses": [
+    {
+     "model": "zimage_base",
+     "variant": "bf16"
+    }
+   ],
+   "bytes": 12309866400,
+   "sha256": "996a67d3ff666946b1c25cbc16d1b1918b6cc0ac166309e23fe3b3d830263dee"
+  },
+  {
+   "path": "cold/models/diffusion_models/ZiT/zImageTurbo_turbo.safetensors",
+   "uses": [
+    {
+     "model": "zimage_turbo",
+     "variant": "bf16"
+    }
+   ],
+   "bytes": 12309866400,
+   "sha256": "2407613050b809ffdff18a4ac99af83ea6b95443ecebdf80e064a79c825574a6"
+  },
+  {
+   "path": "cold/models/text_encoders/anima/qwen_3_06b_base.safetensors",
+   "uses": [
+    {
+     "role": "te",
+     "family": "anima"
+    }
+   ],
+   "bytes": 1192135096,
+   "sha256": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba"
+  },
+  {
+   "path": "cold/models/text_encoders/qwen_3_4b.safetensors",
+   "uses": [
+    {
+     "role": "te",
+     "family": "zimage"
+    }
+   ],
+   "bytes": 8044982048,
+   "sha256": "6c671498573ac2f7a5501502ccce8d2b08ea6ca2f661c458e708f36b36edfc5a"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/anima_base/fp8.safetensors",
+   "uses": [
+    {
+     "model": "anima_base",
+     "variant": "fp8"
+    }
+   ],
+   "bytes": 2420732848,
+   "sha256": "4d56a3b6755f1af7f7cb0d101b28b7fb52c1a00619d636bd4a90f90fbece11cb"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/anima_base/int8.safetensors",
+   "uses": [
+    {
+     "model": "anima_base",
+     "variant": "int8"
+    }
+   ],
+   "bytes": 2423706968,
+   "sha256": "946635794727bcd743fee9f9d8303b6c34f673b77e59567d8e4fb90979148853"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/anima_base/nvfp4.safetensors",
+   "uses": [
+    {
+     "model": "anima_base",
+     "variant": "nvfp4"
+    }
+   ],
+   "bytes": 1650068536,
+   "sha256": "6acb9a76c8d258e3aa31127b5e84d7ebfafad029462308c71dc326e6c2b03cec"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/anima_base/w4a8.safetensors",
+   "uses": [
+    {
+     "model": "anima_base",
+     "variant": "w4a8"
+    }
+   ],
+   "bytes": 1653035304,
+   "sha256": "e81aff162aeeb769d553863ec3e273b925abc7ee2e4d6a32a75b6a0fb3052745"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/anima_turbo/fp8.safetensors",
+   "uses": [
+    {
+     "model": "anima_turbo",
+     "variant": "fp8"
+    }
+   ],
+   "bytes": 2420726744,
+   "sha256": "c7c1d44330173ca874f08c27320bbf511aa4585d5da9b81f60e2783e16cc6289"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/anima_turbo/int8.safetensors",
+   "uses": [
+    {
+     "model": "anima_turbo",
+     "variant": "int8"
+    }
+   ],
+   "bytes": 2423700872,
+   "sha256": "80795207e8119f39b61754e55ab8eb7b7dc4136a3f70e6601165a8b0d52a104f"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/anima_turbo/nvfp4.safetensors",
+   "uses": [
+    {
+     "model": "anima_turbo",
+     "variant": "nvfp4"
+    }
+   ],
+   "bytes": 1650061320,
+   "sha256": "ab2445451c7dc17a32c2d97dd4600a34e840af9f4caea50aeddd5b4210d0a456"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/anima_turbo/w4a8.safetensors",
+   "uses": [
+    {
+     "model": "anima_turbo",
+     "variant": "w4a8"
+    }
+   ],
+   "bytes": 1653028088,
+   "sha256": "b25a03e5ab5b1b0fd7a4408ba8362e1f44319e1b4b4b16b03ab60e7077e26449"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/krea2_base/fp8.safetensors",
+   "uses": [
+    {
+     "model": "krea2_base",
+     "variant": "fp8"
+    }
+   ],
+   "bytes": 13784937916,
+   "sha256": "62ec786d55795edcfe817de848cb2b8f329e43776d479ed83aa6941441f7aaea"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/krea2_base/int8.safetensors",
+   "uses": [
+    {
+     "model": "krea2_base",
+     "variant": "int8"
+    }
+   ],
+   "bytes": 13792162656,
+   "sha256": "6086f04f2bf858218bbfa8cc1c1611fcb26d4b22b589b1975fda648f36bc59ce"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/krea2_base/nvfp4.safetensors",
+   "uses": [
+    {
+     "model": "krea2_base",
+     "variant": "nvfp4"
+    }
+   ],
+   "bytes": 8316876596,
+   "sha256": "dc99873d553889fb345f06a2b0b2c3474d3a599aa06bcda92a913f454215e619"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/krea2_base/w4a8.safetensors",
+   "uses": [
+    {
+     "model": "krea2_base",
+     "variant": "w4a8"
+    }
+   ],
+   "bytes": 8324094880,
+   "sha256": "bdd65b03147a7dcc29b3348d41518b2422da36f015b80304836cb0a7cb5e02ca"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/krea2_turbo/fp8.safetensors",
+   "uses": [
+    {
+     "model": "krea2_turbo",
+     "variant": "fp8"
+    }
+   ],
+   "bytes": 13784937924,
+   "sha256": "8af635acdcb90c4517bb9d49c77d14a78e5d768563652f1df4e8b7936eb60756"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/krea2_turbo/int8.safetensors",
+   "uses": [
+    {
+     "model": "krea2_turbo",
+     "variant": "int8"
+    }
+   ],
+   "bytes": 13792162656,
+   "sha256": "85579eaee8eaf6d3420035cc94b416b5020d01ca4758277dd5664389f80d7de0"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/krea2_turbo/nvfp4.safetensors",
+   "uses": [
+    {
+     "model": "krea2_turbo",
+     "variant": "nvfp4"
+    }
+   ],
+   "bytes": 8316876596,
+   "sha256": "080d9227c564b19aebe8069a6b0bca7feb63631d83fc22c9f42a3cd0d2d85c52"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/krea2_turbo/w4a8.safetensors",
+   "uses": [
+    {
+     "model": "krea2_turbo",
+     "variant": "w4a8"
+    }
+   ],
+   "bytes": 8324094880,
+   "sha256": "17675f83d21947cd872444dacbab99eb0458ade04c2cec5e3f6202684fccd505"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/moss_base/fp8.safetensors",
+   "uses": [
+    {
+     "model": "moss_base",
+     "variant": "fp8"
+    }
+   ],
+   "bytes": 5408383026,
+   "sha256": "e3e765c7f3c5a9c573eb12cbec9d030e598733b7a9d3eeb81da9ea5f7422eadd"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/moss_base/int8.safetensors",
+   "uses": [
+    {
+     "model": "moss_base",
+     "variant": "int8"
+    }
+   ],
+   "bytes": 5413717318,
+   "sha256": "635c593db89250c2c698885a0f5012a24f0b9bbff34a54271fa30e13197ad9b3"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/moss_base/nvfp4.safetensors",
+   "uses": [
+    {
+     "model": "moss_base",
+     "variant": "nvfp4"
+    }
+   ],
+   "bytes": 3327506018,
+   "sha256": "4540487e2db92cf8b093fbbeb570a22745bc370597e8b7cfb324175fc397cb01"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/moss_base/w4a8.safetensors",
+   "uses": [
+    {
+     "model": "moss_base",
+     "variant": "w4a8"
+    }
+   ],
+   "bytes": 3332830120,
+   "sha256": "ecad9c2352edd19e5e2eb185a897dd9ef521fc40eda3570e6bada33748f43202"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/moss_turbo/fp8.safetensors",
+   "uses": [
+    {
+     "model": "moss_turbo",
+     "variant": "fp8"
+    }
+   ],
+   "bytes": 5408383122,
+   "sha256": "785403fa0ee6d000c7d9559d41ec77670ed0004a33b7bd89149580b369e9ce4d"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/moss_turbo/int8.safetensors",
+   "uses": [
+    {
+     "model": "moss_turbo",
+     "variant": "int8"
+    }
+   ],
+   "bytes": 5413717414,
+   "sha256": "737f217e01eda331b715264483bedbf9ced5f6e345cbec976179037f20856a8e"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/moss_turbo/nvfp4.safetensors",
+   "uses": [
+    {
+     "model": "moss_turbo",
+     "variant": "nvfp4"
+    }
+   ],
+   "bytes": 3327506106,
+   "sha256": "c27fcb6a03fd0fb27fc312496691173c4b521eb97ef1a53ea90061619638bb66"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/moss_turbo/w4a8.safetensors",
+   "uses": [
+    {
+     "model": "moss_turbo",
+     "variant": "w4a8"
+    }
+   ],
+   "bytes": 3332830208,
+   "sha256": "96d6d8e41a8f88281dd4678ea5f25be5a1c7f8a4b551179cc2e20c3ad305c221"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/sdxl_base/fp8.safetensors",
+   "uses": [
+    {
+     "model": "sdxl_base",
+     "variant": "fp8"
+    }
+   ],
+   "bytes": 2951497920,
+   "sha256": "8de75ee68197c16fa13ed7a72801d0d78a3720da2689528fe8114b840e136756"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/sdxl_base/int8.safetensors",
+   "uses": [
+    {
+     "model": "sdxl_base",
+     "variant": "int8"
+    }
+   ],
+   "bytes": 3014088152,
+   "sha256": "90fa7cd078c2366af4c2730340564dd90b24ce5399011e079fa67e3c021de0dd"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/sdxl_base/nvfp4.safetensors",
+   "uses": [
+    {
+     "model": "sdxl_base",
+     "variant": "nvfp4"
+    }
+   ],
+   "bytes": 2155819020,
+   "sha256": "44d33641c6febff1995aee89ef20ca0515fd536374c7668d4f5ad06da4c91d09"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/sdxl_base/w4a8.safetensors",
+   "uses": [
+    {
+     "model": "sdxl_base",
+     "variant": "w4a8"
+    }
+   ],
+   "bytes": 2232840912,
+   "sha256": "f82b8ce9c8f410717b7b90996bbfd53c8cd959898bc0967d1679a9ee4b44a230"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/sdxl_turbo/fp8.safetensors",
+   "uses": [
+    {
+     "model": "sdxl_turbo",
+     "variant": "fp8"
+    }
+   ],
+   "bytes": 2951497960,
+   "sha256": "de1d156c9528cac3e932ff40e77d0133b437a8c46c0689b85d13d7f472a0fdc0"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/sdxl_turbo/int8.safetensors",
+   "uses": [
+    {
+     "model": "sdxl_turbo",
+     "variant": "int8"
+    }
+   ],
+   "bytes": 3014088192,
+   "sha256": "57f0f14c3af37b25b647094c50bf444189161b5371d49ccdee0754adbc5cfba0"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/sdxl_turbo/nvfp4.safetensors",
+   "uses": [
+    {
+     "model": "sdxl_turbo",
+     "variant": "nvfp4"
+    }
+   ],
+   "bytes": 2155819052,
+   "sha256": "20c76bf484295ec6d12f52e66a5b1e5869f871e3177c5f9cace407b0f9fde612"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/sdxl_turbo/w4a8.safetensors",
+   "uses": [
+    {
+     "model": "sdxl_turbo",
+     "variant": "w4a8"
+    }
+   ],
+   "bytes": 2232840952,
+   "sha256": "48e289d831d8c022024fcef888ce082f19b33462ac3c697a05e11e0103c05fba"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/zimage_base/fp8.safetensors",
+   "uses": [
+    {
+     "model": "zimage_base",
+     "variant": "fp8"
+    }
+   ],
+   "bytes": 6293733022,
+   "sha256": "5d5d6113097b2b9e7d99d9ee2f2e2833bea09898626840f57e594f614faf0203"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/zimage_base/int8.safetensors",
+   "uses": [
+    {
+     "model": "zimage_base",
+     "variant": "int8"
+    }
+   ],
+   "bytes": 6299124752,
+   "sha256": "7200a4d54ed17d296efa63af4c29199ea41d47ee4266adec73fdb31340029822"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/zimage_base/nvfp4.safetensors",
+   "uses": [
+    {
+     "model": "zimage_base",
+     "variant": "nvfp4"
+    }
+   ],
+   "bytes": 3661666442,
+   "sha256": "35734f4c2cbf850db3951786270d2aef611451db0eaf8ed17a86b0deb732a286"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/zimage_base/w4a8.safetensors",
+   "uses": [
+    {
+     "model": "zimage_base",
+     "variant": "w4a8"
+    }
+   ],
+   "bytes": 3667053704,
+   "sha256": "bcd8a76265887f07c68eab9f5c29b6c99fa181fea7f67805521af1daf9274f11"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/zimage_turbo/fp8.safetensors",
+   "uses": [
+    {
+     "model": "zimage_turbo",
+     "variant": "fp8"
+    }
+   ],
+   "bytes": 6293733022,
+   "sha256": "58a0788bbba700a585289ea52f199574b20ff339bae549a6647c9a8e2cda16a1"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/zimage_turbo/int8.safetensors",
+   "uses": [
+    {
+     "model": "zimage_turbo",
+     "variant": "int8"
+    }
+   ],
+   "bytes": 6299124752,
+   "sha256": "f003f59c802af203a32b8f80b590b41ba37784f4662e3ffc2402143cd926b3b0"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/zimage_turbo/nvfp4.safetensors",
+   "uses": [
+    {
+     "model": "zimage_turbo",
+     "variant": "nvfp4"
+    }
+   ],
+   "bytes": 3661666442,
+   "sha256": "8ba0d6cdca18680b3ce2be6be89d9112b7a5aebdcd3c2ae464b876d20f3cfded"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/bakes/zimage_turbo/w4a8.safetensors",
+   "uses": [
+    {
+     "model": "zimage_turbo",
+     "variant": "w4a8"
+    }
+   ],
+   "bytes": 3667053704,
+   "sha256": "eed84330446a3dbe231de74fb078610c34d56199a304db1a9cb66da124324520"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/cond/Illustrious-XL-v2.0.pt",
+   "uses": [
+    {
+     "role": "cond",
+     "model": "sdxl_base"
+    }
+   ],
+   "bytes": 2547957,
+   "sha256": "bb830b91b1a1b6fd6b4a6e8d055455429525113ce2ad9638982e8c081d524aa3"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/cond/Luminelle_v10.pt",
+   "uses": [
+    {
+     "role": "cond",
+     "model": "sdxl_turbo"
+    }
+   ],
+   "bytes": 2547809,
+   "sha256": "c55befdce3a5e2c5579f847bc3de2e87b9463976d3d3438aebb6d90ee9af0ca1"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/cond/anima.pt",
+   "uses": [
+    {
+     "role": "cond",
+     "model": "anima_base"
+    },
+    {
+     "role": "cond",
+     "model": "anima_turbo"
+    }
+   ],
+   "bytes": 630727,
+   "sha256": "b366ca4ba9555aa42996a457a3b1f4adae48e35742b0e9c32fc9a18715bd841e"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/cond/krea2.pt",
+   "uses": [
+    {
+     "role": "cond",
+     "model": "krea2_base"
+    },
+    {
+     "role": "cond",
+     "model": "krea2_turbo"
+    }
+   ],
+   "bytes": 18434953,
+   "sha256": "4a77d46225c10dcedad87eff6f5d0cd64bff1fc913030f8934e815d51fa9c84a"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/cond/moss.pt",
+   "uses": [
+    {
+     "role": "cond",
+     "model": "moss_base"
+    },
+    {
+     "role": "cond",
+     "model": "moss_turbo"
+    }
+   ],
+   "bytes": 3003619,
+   "sha256": "d06d4561de76eef2380243fd9f236983f28f850016aefa734674d751d7c05053"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/cond/zimage.pt",
+   "uses": [
+    {
+     "role": "cond",
+     "model": "zimage_base"
+    },
+    {
+     "role": "cond",
+     "model": "zimage_turbo"
+    }
+   ],
+   "bytes": 1663999,
+   "sha256": "15d69e43ba5de882b697b0548551bb24c22d12b47e493d4c8c951071f7af7f7c"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/ref/anima_base/p0.pt",
+   "uses": [
+    {
+     "role": "ref",
+     "model": "anima_base"
+    }
+   ],
+   "bytes": 125856729,
+   "sha256": "2965faecd6a72210570a6865822852115dddb3a5e7288a7dd03d20192a03d639"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/ref/anima_turbo/p0.pt",
+   "uses": [
+    {
+     "role": "ref",
+     "model": "anima_turbo"
+    }
+   ],
+   "bytes": 16781701,
+   "sha256": "4dba8aeae9e4782f17033f5ff0df3037104e2005c66718945865ede79e32ee84"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/ref/krea2_base/p0.pt",
+   "uses": [
+    {
+     "role": "ref",
+     "model": "krea2_base"
+    }
+   ],
+   "bytes": 125856729,
+   "sha256": "34ad85deef85be44cacad3b36257448ed51434b3cfcaf179cb3ccf7e4ce2c878"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/ref/krea2_turbo/p0.pt",
+   "uses": [
+    {
+     "role": "ref",
+     "model": "krea2_turbo"
+    }
+   ],
+   "bytes": 16781701,
+   "sha256": "1af17c0efaab3593341271449baf786417c6b7bb3a59228df433ce3105770f14"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/ref/moss_base/p0.pt",
+   "uses": [
+    {
+     "role": "ref",
+     "model": "moss_base"
+    }
+   ],
+   "bytes": 209737765,
+   "sha256": "34fb1f172b102d3900946986dd821ba3eae0f397745445b87b70030ffabffa51"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/ref/moss_turbo/p0.pt",
+   "uses": [
+    {
+     "role": "ref",
+     "model": "moss_turbo"
+    }
+   ],
+   "bytes": 33558853,
+   "sha256": "6ddb6932439ddbe21a4d7bae2956a7d66b35740cfa67a0db595aedbc428c3c42"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/ref/sdxl_base/p0.pt",
+   "uses": [
+    {
+     "role": "ref",
+     "model": "sdxl_base"
+    }
+   ],
+   "bytes": 26236965,
+   "sha256": "ea796b3050264ae7e1e81abfa373ab8852609ac929c6f8c4685b5a00cc1fa613"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/ref/sdxl_turbo/p0.pt",
+   "uses": [
+    {
+     "role": "ref",
+     "model": "sdxl_turbo"
+    }
+   ],
+   "bytes": 2100039,
+   "sha256": "e1c993c04a30a34f57b5a4ee5310f55a3190457dabe206acb9d043f0edaeb6c1"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/ref/zimage_base/p0.pt",
+   "uses": [
+    {
+     "role": "ref",
+     "model": "zimage_base"
+    }
+   ],
+   "bytes": 104880165,
+   "sha256": "6ebfb790867f2fdb930b8ed3349453254937938d564d1ce8861632a23854635a"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/ref/zimage_turbo/p0.pt",
+   "uses": [
+    {
+     "role": "ref",
+     "model": "zimage_turbo"
+    }
+   ],
+   "bytes": 16781637,
+   "sha256": "cea7525de70728cec2dfcf9777bed587fc266cb4005d002fa05a388d738b0f60"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/sources/Illustrious-XL-v2.0_vae.safetensors",
+   "uses": [
+    {
+     "role": "vae",
+     "model": "sdxl_base"
+    }
+   ],
+   "bytes": 167333134,
+   "sha256": "3cc3b7f04550109b453ff14dc0f91da4aed05f0b90bbc5bbb573c5eabf5161f0"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/sources/Luminelle_v10_vae.safetensors",
+   "uses": [
+    {
+     "role": "vae",
+     "model": "sdxl_turbo"
+    }
+   ],
+   "bytes": 167333134,
+   "sha256": "c2295f05fd7840883da8bcc7b778ce5cf6036439500eed01302996ac27087827"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/sources/moss_base_dmd2_merged.safetensors",
+   "uses": [
+    {
+     "model": "moss_turbo",
+     "variant": "bf16"
+    }
+   ],
+   "bytes": 10164655912,
+   "sha256": "8505d5ef88e84237a4fcdb7d147ebf908ac02bc420be22bc1f9c345cd9eac46c"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/sources/sdxl_base_unet.safetensors",
+   "uses": [
+    {
+     "model": "sdxl_base",
+     "variant": "bf16"
+    }
+   ],
+   "bytes": 5135137560,
+   "sha256": "fc8580c2e0c1ca41063da1fd400e2d821298287f722341f7cd4c251591d82ebe"
+  },
+  {
+   "path": "flash/downloads/_quant_bench/sources/sdxl_ft_dmd2_merged_unet.safetensors",
+   "uses": [
+    {
+     "model": "sdxl_turbo",
+     "variant": "bf16"
+    }
+   ],
+   "bytes": 5135137592,
+   "sha256": "e7910b42b41be43e8ec1e035ae812ef6320cd599635ccb7bd1b0ec70ddf48927"
+  },
+  {
+   "path": "flash/models/checkpoints/Illustrious/Illustrious-XL-v2.0.safetensors",
+   "uses": [
+    {
+     "role": "ckpt",
+     "model": "sdxl_base"
+    }
+   ],
+   "bytes": 6938040286,
+   "sha256": "2337449913e911cb3130558a9662527393afb05acea76ca6bc701a310605e6f6"
+  },
+  {
+   "path": "flash/models/checkpoints/Illustrious/Luminelle_v10.safetensors",
+   "uses": [
+    {
+     "role": "ckpt",
+     "model": "sdxl_turbo"
+    }
+   ],
+   "bytes": 7252533306,
+   "sha256": "1b78dee6e964f49b5a25fbd41ac9007db1bc1d175d101b1896b8335ce2ad4588"
+  },
+  {
+   "path": "flash/models/diffusion_models/anima/anima-base-v1.0.safetensors",
+   "uses": [
+    {
+     "model": "anima_base",
+     "variant": "bf16"
+    }
+   ],
+   "bytes": 4182218328,
+   "sha256": "bd43b7cffe1ed1153d9c41e7beb2f18cb1273eafbaa3af3edd6a173dc90a006e"
+  },
+  {
+   "path": "flash/models/diffusion_models/anima/anima-turbo-v1.0.safetensors",
+   "uses": [
+    {
+     "model": "anima_turbo",
+     "variant": "bf16"
+    }
+   ],
+   "bytes": 4182230656,
+   "sha256": "c0b905034510750a505d21aa96c81718f4ffcc500777318421f58a88636e2174"
+  },
+  {
+   "path": "flash/models/diffusion_models/moss/fp16/moss_image_base_bf16.safetensors",
+   "uses": [
+    {
+     "model": "moss_base",
+     "variant": "bf16"
+    }
+   ],
+   "bytes": 10164655808,
+   "sha256": "cacd158728a1fb9e57c408a922b54752ec71fceb566b3821269927964e62b41f"
+  },
+  {
+   "path": "flash/models/text_encoders/moss/qwen3.5_9b_int8_convrot.safetensors",
+   "uses": [
+    {
+     "role": "te",
+     "family": "moss"
+    }
+   ],
+   "bytes": 9748121532,
+   "sha256": "32e3787472f708fa5f83624acbf5ef23f7fc89c439e05065ea57cfe5a97f025a"
+  },
+  {
+   "path": "flash/models/text_encoders/qwen3-4b-vl/qwen3VL4BAbliteratedComfyui_v10_full_fp8.safetensors",
+   "uses": [
+    {
+     "role": "te",
+     "family": "krea2"
+    }
+   ],
+   "bytes": 4831356160,
+   "sha256": "1cc1120f54f04736e4dee3b8b22744637332cb34e645a1e4c51196191861ae9d"
+  },
+  {
+   "path": "flash/models/vae/Flux.2_D/flux2-vae1.safetensors",
+   "uses": [
+    {
+     "role": "vae",
+     "family": "moss"
+    }
+   ],
+   "bytes": 336211292,
+   "sha256": "868fe7b343cc8f3a19dbcfcafbc3d5f888802be3f89bd81b65b3621a066ce8f3"
+  },
+  {
+   "path": "flash/models/vae/Flux/ae.safetensors",
+   "uses": [
+    {
+     "role": "vae",
+     "family": "zimage"
+    }
+   ],
+   "bytes": 335342884,
+   "sha256": "ada17f94d5a4a9655f0ca7281d10110af404cb3728feab08531ad5e5fef6b432"
+  },
+  {
+   "path": "flash/models/vae/anima/qwen_image_vae.safetensors",
+   "uses": [
+    {
+     "role": "vae",
+     "family": "anima"
+    }
+   ],
+   "bytes": 253806246,
+   "sha256": "a70580f0213e67967ee9c95f05bb400e8fb08307e017a924bf3441223e023d1f"
+  },
+  {
+   "path": "flash/models/vae/qwen/qwen_image_vae.safetensors",
+   "uses": [
+    {
+     "role": "vae",
+     "family": "krea2"
+    }
+   ],
+   "bytes": 253806246,
+   "sha256": "a70580f0213e67967ee9c95f05bb400e8fb08307e017a924bf3441223e023d1f"
+  }
+ ]
+}
