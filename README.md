@@ -42,7 +42,9 @@ cd comfyui-quant-bench
 ```
 
 On Windows, run those three lines in your **WSL (Ubuntu) terminal**, inside
-your WSL home folder (`cd ~` first), not on `/mnt/c`.
+your WSL home folder (`cd ~` first), not on `/mnt/c`. If `docker` isn't found
+there, turn on Docker Desktop → Settings → Resources → **WSL integration** for
+your Ubuntu distro, then open a new terminal.
 
 `run.sh` checks your setup, asks which GPU to test and how to credit you,
 builds the container, shows exactly what it will download and how big it is,
